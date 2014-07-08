@@ -9,9 +9,14 @@ void testApp::setup(){
     
     flower.play();
     
-    space.loadImage("space.jpg"); 
+    space.loadImage("space.jpg");
+    
+
     
     ofBackground(0,0,0);
+    
+    //-----------make pdf-------
+    to_pdf = false; 
     
     //-----------------sound-----------------------
     soundStream.listDevices();
@@ -55,13 +60,15 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
+  
     
     flower.draw(0+30, 0, ofGetWidth(), ofGetHeight());
     
-    //ofSetColor(0, 100);
-    //space.draw(0,0, 10);
+    //ofColor centerColor = ofColor(0, 0, 0);
+    //ofColor edgeColor(255, 255, 255);
+    //ofBackgroundGradient(centerColor, edgeColor, OF_GRADIENT_CIRCULAR);
 
-    
+    //---------attractor stuff__________________ 
     int n = 100000;
     
     //a = 1.40, b = 1.56, c = 1.40, d = -6.56
@@ -91,7 +98,32 @@ void testApp::draw(){
         x0 = x1;
         y0 = y1;
     }
-        
+    
+   if (scaledVol>=0.40){
+       
+       //change = true;
+       
+       for (int i = 0; i<255; i++){
+             for (int j = 0; j<255; j++){
+       ofSetColor(0, j, 0, 100);
+       //ofFill();
+       ofLine(x1, y1, x1+0.01, y1);
+       }
+       }
+       
+   } else {
+       
+       ofSetColor(255); 
+       
+   }
+   
+    
+    cout << scaledVol<< endl;
+    
+    if(to_pdf){
+        ofEndSaveScreenAsPDF();
+        to_pdf = !to_pdf; 
+    }
         
     }
 
@@ -129,6 +161,10 @@ void testApp::audioIn(float * input, int bufferSize, int nChannels){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+    if(key=='p'){
+        to_pdf = !to_pdf; 
+    }
 
 }
 

@@ -40,8 +40,14 @@ class testApp : public ofBaseApp{
     
     ofSoundStream soundStream;
     
+    //_________________video_______________________
+    
     ofVideoPlayer flower;
     ofImage space;
 
+    bool change = false;
+    
+    //-------------pdf----------
+    bool to_pdf; 
 		
 };

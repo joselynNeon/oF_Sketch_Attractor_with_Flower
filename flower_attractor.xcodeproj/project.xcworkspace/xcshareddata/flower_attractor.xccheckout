@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C7E2B427-6230-410B-B362-EB8AFE880D28</string>
+	<key>IDESourceControlProjectName</key>
+	<string>flower_attractor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9C23B009-27E2-4416-99A4-11108F9424F1</key>
+		<string>https://github.com/joselynNeon/oF_Sketch_Attractor_with_Flower.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>flower_attractor.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9C23B009-27E2-4416-99A4-11108F9424F1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joselynNeon/oF_Sketch_Attractor_with_Flower.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9C23B009-27E2-4416-99A4-11108F9424F1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9C23B009-27E2-4416-99A4-11108F9424F1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>flower_attractor</string>
+		</dict>
+	</array>
+</dict>
+</plist>
